@@ -1,4 +1,4 @@
-FROM amazoncorretto:11
+FROM public.ecr.aws/lts/ubuntu:latest
 
 ARG JAR_FILE=build/libs/*SNAPSHOT.jar
 COPY ${JAR_FILE} /app.jar
